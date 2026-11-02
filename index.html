@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jay Games | Indie Game Developer</title>
-  <meta name="description" content="Official website of Jay Games by Bijay Chalise, indie solo game developer.">
+  <title>Jay Games & Apps | Bijay Chalise</title>
+  <meta name="description" content="Official developer site of Bijay Chalise. Solo indie creator building games and apps.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800;900&display=swap" rel="stylesheet">
@@ -24,12 +24,12 @@
       flex-direction: column;
     }
 
-    /* Top Navigation */
+    /* Top Nav */
     header {
       width: 100%;
-      max-width: 1180px;
+      max-width: 1100px;
       margin: 0 auto;
-      padding: 28px 24px;
+      padding: 24px;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -47,37 +47,38 @@
       background: #0284c7;
       color: #ffffff;
       font-size: 11px;
-      padding: 4px 10px;
+      padding: 3px 10px;
       border-radius: 999px;
       font-weight: 800;
       letter-spacing: 0.5px;
     }
 
-    /* Hero Section */
+    /* Hero */
     .hero {
       max-width: 820px;
-      margin: 30px auto 20px;
+      margin: 36px auto 16px;
       padding: 0 24px;
       text-align: center;
     }
     .badge-pill {
       display: inline-block;
-      background: #f0f9ff;
-      border: 1px solid #bae6fd;
-      color: #0369a1;
-      font-size: 13px;
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      color: #15803d;
+      font-size: 12px;
       font-weight: 800;
-      padding: 6px 18px;
+      padding: 6px 16px;
       border-radius: 999px;
       margin-bottom: 20px;
+      letter-spacing: 0.5px;
     }
     h1 {
-      font-size: 44px;
+      font-size: 42px;
       font-weight: 900;
       color: #0f172a;
       line-height: 1.2;
       letter-spacing: -1px;
-      margin-bottom: 18px;
+      margin-bottom: 16px;
     }
     h1 span {
       color: #0284c7;
@@ -85,54 +86,50 @@
     .hero p {
       font-size: 17px;
       color: #475569;
-      max-width: 640px;
+      max-width: 660px;
       margin: 0 auto 36px;
       font-weight: 500;
     }
 
-    /* Games Grid Layout */
-    .games-container {
-      max-width: 1180px;
+    /* Project Sections */
+    .section-wrap {
+      max-width: 1100px;
       width: 100%;
-      margin: 0 auto 60px;
+      margin: 0 auto 48px;
       padding: 0 24px;
     }
-    .games-header {
-      margin-bottom: 24px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-    .games-header h2 {
-      font-size: 22px;
+    .section-title {
+      font-size: 20px;
       font-weight: 800;
       color: #0f172a;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
 
-    .games-grid {
+    .cards-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
       gap: 24px;
       width: 100%;
     }
 
-    /* Game Card */
-    .game-card {
+    .project-card {
       background: #ffffff;
       border: 1px solid #e2e8f0;
       border-radius: 24px;
       padding: 28px 24px;
-      box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.06);
+      box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.05);
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
       transition: all 0.2s ease;
-      position: relative;
     }
-    .game-card:hover {
+    .project-card:hover {
       transform: translateY(-4px);
-      box-shadow: 0 20px 40px -12px rgba(15, 23, 42, 0.12);
+      box-shadow: 0 20px 40px -12px rgba(15, 23, 42, 0.1);
       border-color: #cbd5e1;
     }
 
@@ -142,34 +139,33 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      margin-bottom: 18px;
+      margin-bottom: 16px;
     }
     .card-logo-img {
-      max-width: 200px;
-      max-height: 100px;
+      max-width: 210px;
+      max-height: 105px;
       object-fit: contain;
       filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.08));
     }
-    .card-coming-icon {
+    .card-placeholder-icon {
       width: 80px;
       height: 80px;
-      background: #f1f5f9;
-      border-radius: 20px;
+      background: #f8fafc;
+      border-radius: 22px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 36px;
-      color: #94a3b8;
+      font-size: 34px;
       border: 2px dashed #cbd5e1;
     }
 
-    .game-card h3 {
+    .project-card h3 {
       font-size: 20px;
       font-weight: 800;
       color: #0f172a;
       margin-bottom: 8px;
     }
-    .game-card p {
+    .project-card p {
       font-size: 14px;
       color: #64748b;
       margin-bottom: 24px;
@@ -177,30 +173,48 @@
       line-height: 1.6;
     }
 
-    .btn-play {
+    /* Official Google Play Badge */
+    .play-badge-link {
+      display: inline-block;
+      transition: transform 0.2s ease, filter 0.2s ease;
+      text-decoration: none;
+    }
+    .play-badge-link:hover {
+      transform: scale(1.03);
+      filter: brightness(1.06);
+    }
+    .play-badge-btn {
       display: inline-flex;
       align-items: center;
-      justify-content: center;
-      gap: 10px;
-      background: #0f172a;
+      gap: 12px;
+      background: #000000;
       color: #ffffff;
-      padding: 13px 24px;
-      border-radius: 14px;
-      font-size: 14px;
+      padding: 10px 22px;
+      border-radius: 12px;
+      border: 1px solid #27272a;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+    .play-badge-svg {
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+    }
+    .play-badge-text {
+      text-align: left;
+      line-height: 1.1;
+    }
+    .play-badge-sub {
+      font-size: 9px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: #a1a1aa;
+      font-weight: 600;
+    }
+    .play-badge-main {
+      font-size: 15px;
       font-weight: 800;
-      text-decoration: none;
-      width: 100%;
-      transition: all 0.2s ease;
-      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.15);
-    }
-    .btn-play:hover {
-      background: #1e293b;
-      transform: scale(1.02);
-    }
-    .btn-play svg {
-      width: 18px;
-      height: 18px;
-      fill: currentColor;
+      color: #ffffff;
+      letter-spacing: -0.2px;
     }
 
     .btn-coming {
@@ -210,72 +224,114 @@
       background: #f8fafc;
       color: #94a3b8;
       border: 1px solid #e2e8f0;
-      padding: 13px 24px;
-      border-radius: 14px;
-      font-size: 13px;
+      padding: 12px 24px;
+      border-radius: 12px;
+      font-size: 12px;
       font-weight: 800;
       width: 100%;
       cursor: default;
-      letter-spacing: 0.5px;
+      letter-spacing: 0.8px;
     }
 
-    /* Solo Dev Note */
-    .solo-note {
-      max-width: 1180px;
+    /* Personal Story & Mission Box */
+    .story-section {
+      max-width: 1100px;
       width: 100%;
-      margin: 0 auto 50px;
+      margin: 10px auto 60px;
       padding: 0 24px;
     }
-    .solo-box {
+    .story-card {
       background: #ffffff;
       border: 1px solid #e2e8f0;
-      border-radius: 20px;
-      padding: 24px 28px;
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+      border-radius: 28px;
+      padding: 36px 32px;
+      box-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.04);
     }
-    .solo-avatar {
-      width: 52px;
-      height: 52px;
-      background: #0284c7;
-      color: #ffffff;
+    .story-tag {
+      font-size: 12px;
+      font-weight: 800;
+      color: #0284c7;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+    .story-card h2 {
+      font-size: 26px;
+      font-weight: 900;
+      color: #0f172a;
+      margin-bottom: 16px;
+      letter-spacing: -0.5px;
+    }
+    .story-card p {
+      font-size: 15px;
+      color: #475569;
+      line-height: 1.75;
+      margin-bottom: 16px;
+    }
+    .story-card p:last-child {
+      margin-bottom: 0;
+    }
+    .highlight-quote {
+      background: #f8fafc;
+      border-left: 4px solid #0284c7;
+      padding: 18px 20px;
+      border-radius: 0 16px 16px 0;
+      margin: 20px 0;
+      font-weight: 600;
+      color: #1e293b;
+      font-size: 15px;
+    }
+
+    /* Values Grid */
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+    .value-item {
+      background: #fafbfc;
+      border: 1px solid #f1f5f9;
       border-radius: 16px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 24px;
-      flex-shrink: 0;
+      padding: 18px 20px;
     }
-    .solo-text h4 {
-      font-size: 16px;
+    .value-item h4 {
+      font-size: 15px;
       font-weight: 800;
       color: #0f172a;
-      margin-bottom: 4px;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
-    .solo-text p {
-      font-size: 14px;
+    .value-item p {
+      font-size: 13px;
       color: #64748b;
+      margin-bottom: 0;
+      line-height: 1.6;
     }
 
     footer {
       margin-top: auto;
       border-top: 1px solid #e2e8f0;
       background: #ffffff;
-      padding: 24px;
+      padding: 28px 24px;
       text-align: center;
       font-size: 13px;
       color: #94a3b8;
+    }
+    footer a {
+      color: #0284c7;
+      text-decoration: none;
+      font-weight: 600;
     }
 
     @media (max-width: 768px) {
       h1 {
         font-size: 32px;
       }
-      .solo-box {
-        flex-direction: column;
-        text-align: center;
+      .story-card {
+        padding: 28px 20px;
       }
     }
   </style>
@@ -283,76 +339,129 @@
 <body>
   <header>
     <a href="/" class="brand">
-      <span>Jay Games</span>
-      <span class="brand-badge">INDIE DEV</span>
+      <span>Jay Games & Apps</span>
+      <span class="brand-badge">SOLO DEV</span>
     </a>
   </header>
 
   <main>
     <section class="hero">
-      <div class="badge-pill">SOLO INDIE DEVELOPER</div>
-      <h1>Building Fun Games <span>One Project At A Time</span></h1>
-      <p>Hey, I am Bijay Chalise, a solo indie game creator making fun, smooth 3D games with pure focus on gameplay, feel and speed.</p>
+      <div class="badge-pill">SOLO INDIE DEVELOPER & ENTREPRENEUR</div>
+      <h1>Building Games & Apps <span>That Matter</span></h1>
+      <p>I am Bijay Chalise, a solo indie creator on a mission to build simple, engaging games and useful everyday apps with honest design and zero greed.</p>
     </section>
 
-    <!-- Games Grid: Real Game + Coming Soon Boxes -->
-    <section class="games-container">
-      <div class="games-header">
-        <h2>My Games</h2>
+    <!-- Games Section -->
+    <section class="section-wrap">
+      <div class="section-title">
+        <span>🎮</span>
+        <span>My Games</span>
       </div>
 
-      <div class="games-grid">
-        <!-- Card 1: Rush Hour 3D (Live on Google Play) -->
-        <div class="game-card">
+      <div class="cards-grid">
+        <!-- Rush Hour 3D -->
+        <div class="project-card">
           <div class="card-logo-box">
             <img src="rush_hour_logo.png" alt="Rush Hour 3D" class="card-logo-img" />
           </div>
           <h3>Rush Hour 3D</h3>
-          <p>3D traffic unjamming puzzle featuring 100 handcrafted levels, smooth car physics, and supercar collection unlockables.</p>
-          <a href="https://play.google.com/store/apps/details?id=rush.e" target="_blank" rel="noopener noreferrer" class="btn-play">
-            <svg viewBox="0 0 24 24">
-              <path d="M3.609 1.814L13.792 12 3.61 22.186a2.023 2.023 0 0 1-.61-1.464V3.278c0-.585.228-1.127.609-1.464zm11.235 11.238l2.585 2.585-11.839 6.837 9.254-9.422zm0-2.104L5.59 1.526l11.839 6.837-2.585 2.585zm1.488 1.488l3.666 2.117c.928.536.928 1.408 0 1.944l-3.666 2.117-2.072-2.072 2.072-2.106z"/>
-            </svg>
-            <span>GET ON GOOGLE PLAY</span>
+          <p>A fun 3D traffic unjamming puzzle with 100 handcrafted levels, authentic car models, and smooth physics. 100% free to play.</p>
+          
+          <!-- Official Google Play Full-Color Vector Badge -->
+          <a href="https://play.google.com/store/apps/details?id=rush.e" target="_blank" rel="noopener noreferrer" class="play-badge-link" title="Get on Google Play">
+            <div class="play-badge-btn">
+              <svg class="play-badge-svg" viewBox="0 0 512 512">
+                <path fill="#4285F4" d="M325.3 234.3L104.6 13l280.8 161.2-60.1 59.8z"/>
+                <path fill="#EA4335" d="M47 38.6c-4.3 7.8-6.8 17.5-6.8 28.9v377c0 11.4 2.5 21.1 6.8 28.9l224.5-227.1L47 38.6z"/>
+                <path fill="#FBBC04" d="M385.4 337.5L104.6 499l220.7-221.3 60.1 59.8z"/>
+                <path fill="#34A853" d="M465 238.1l-79.6-45.7-60.1 60.1 60.1 60.1 79.6-45.7c22.6-13 22.6-35.8 0-48.8z"/>
+              </svg>
+              <div class="play-badge-text">
+                <div class="play-badge-sub">GET IT ON</div>
+                <div class="play-badge-main">Google Play</div>
+              </div>
+            </div>
           </a>
         </div>
 
-        <!-- Card 2: Coming Soon -->
-        <div class="game-card">
+        <!-- Upcoming Game 1 -->
+        <div class="project-card">
           <div class="card-logo-box">
-            <div class="card-coming-icon">🏎️</div>
+            <div class="card-placeholder-icon">🏎️</div>
           </div>
-          <h3>Next Project</h3>
-          <p>A new 3D action game currently under development with fresh mechanics, physics, and challenging gameplay.</p>
-          <div class="btn-coming">COMING SOON</div>
-        </div>
-
-        <!-- Card 3: Coming Soon -->
-        <div class="game-card">
-          <div class="card-logo-box">
-            <div class="card-coming-icon">🧩</div>
-          </div>
-          <h3>Mystery Puzzle</h3>
-          <p>Exploring new casual puzzle ideas and prototypes designed specifically for instant mobile fun.</p>
+          <h3>Next 3D Game</h3>
+          <p>A new physics-driven casual game built with the same smooth mechanics and zero predatory paywalls.</p>
           <div class="btn-coming">COMING SOON</div>
         </div>
       </div>
     </section>
 
-    <!-- Solo Indie Dev Note -->
-    <section class="solo-note">
-      <div class="solo-box">
-        <div class="solo-avatar">🎮</div>
-        <div class="solo-text">
-          <h4>Why I make games</h4>
-          <p>I build games independently because I love bringing interactive ideas to life. Every game is designed to be lightweight, easy to pick up, and genuinely fun without unnecessary friction.</p>
+    <!-- Apps Section -->
+    <section class="section-wrap">
+      <div class="section-title">
+        <span>📱</span>
+        <span>Everyday Apps</span>
+      </div>
+
+      <div class="cards-grid">
+        <!-- Upcoming App 1 -->
+        <div class="project-card">
+          <div class="card-logo-box">
+            <div class="card-placeholder-icon">💡</div>
+          </div>
+          <h3>Helpful Utility App</h3>
+          <p>Simple, clean tools inspired by world-changing small apps that solve real daily problems without bloat.</p>
+          <div class="btn-coming">IN DEVELOPMENT</div>
+        </div>
+
+        <!-- Upcoming App 2 -->
+        <div class="project-card">
+          <div class="card-logo-box">
+            <div class="card-placeholder-icon">🌱</div>
+          </div>
+          <h3>Productivity & Learning</h3>
+          <p>An accessible lightweight companion app created to help people learn and grow everyday skills.</p>
+          <div class="btn-coming">CONCEPT PHASE</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Real Story & Motto -->
+    <section class="story-section">
+      <div class="story-card">
+        <div class="story-tag">MY STORY & MISSION</div>
+        <h2>Why I Build Games and Apps</h2>
+
+        <p>I grew up playing games and always dreamed of making my own. When I see apps like Duolingo starting small and growing into companies that create jobs for thousands of people, it motivates me deeply.</p>
+
+        <p>My goal as a solo entrepreneur is not just to build software. I want to earn my own living, grow, and one day give back to help small talented creators and underprivileged people achieve their potential too.</p>
+
+        <div class="highlight-quote">
+          "I will never put microtransactions or pay-to-win tricks in my games. My games are free. Yes, I have ads so I can keep building, but I respect players first."
+        </div>
+
+        <p>Building alone is tough, and the reality is that indie projects take time to take off. But I believe if you build with honesty and keep improving based on real player feedback, good people will notice and support the journey.</p>
+
+        <div class="values-grid">
+          <div class="value-item">
+            <h4>🚫 No Microtransactions</h4>
+            <p>No paywalls or predatory capitalism tactics. Full games free for all players.</p>
+          </div>
+          <div class="value-item">
+            <h4>💬 Built On Feedback</h4>
+            <p>Tell me what you love and what you hate so I can improve every update for you.</p>
+          </div>
+          <div class="value-item">
+            <h4>🤝 Bigger Purpose</h4>
+            <p>Working hard to create opportunities and help other talented, humble creators.</p>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2026 Jay Games &bull; Bijay Chalise</p>
+    <p>&copy; 2026 Jay Games &bull; Bijay Chalise &bull; <a href="/app-ads.txt">app-ads.txt</a> &bull; <a href="/game-privacy-policy/">Privacy Policy</a> &bull; <a href="mailto:upadhyabijay4@gmail.com">upadhyabijay4@gmail.com</a></p>
   </footer>
 </body>
 </html>
