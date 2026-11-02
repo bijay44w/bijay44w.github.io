@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bijay Chalise - Games</title>
-  <meta name="description" content="Official website for Rush Hour 3D and games by Bijay Chalise.">
+  <title>Jay Games — Creating High Quality Games</title>
+  <meta name="description" content="Official website of Jay Games by Bijay Chalise. Creating high-performance 3D puzzles and games.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
@@ -15,105 +15,268 @@
       padding: 0;
     }
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background-color: #ffffff;
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #fafbfc;
       color: #0f172a;
+      line-height: 1.6;
       min-height: 100vh;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 40px 20px;
     }
-    .container {
-      max-width: 480px;
+
+    header {
       width: 100%;
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 32px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .brand {
+      font-size: 22px;
+      font-weight: 900;
+      color: #0f172a;
+      letter-spacing: -0.5px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .brand-badge {
+      background: #0284c7;
+      color: #ffffff;
+      font-size: 11px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .hero {
+      max-width: 860px;
+      margin: 40px auto 30px;
+      padding: 0 24px;
       text-align: center;
+    }
+    .moto-pill {
+      display: inline-block;
+      background: #f0f9ff;
+      border: 1px solid #bae6fd;
+      color: #0369a1;
+      font-size: 13px;
+      font-weight: 800;
+      padding: 8px 20px;
+      border-radius: 999px;
+      margin-bottom: 24px;
+      letter-spacing: 0.5px;
+    }
+    h1 {
+      font-size: 48px;
+      font-weight: 900;
+      color: #0f172a;
+      line-height: 1.15;
+      letter-spacing: -1.5px;
+      margin-bottom: 20px;
+    }
+    h1 span {
+      background: linear-gradient(135deg, #0284c7 0%, #2563eb 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero p {
+      font-size: 18px;
+      color: #475569;
+      max-width: 660px;
+      margin: 0 auto 40px;
+      font-weight: 500;
+    }
+
+    /* Featured Game Card */
+    .game-section {
+      max-width: 860px;
+      width: calc(100% - 48px);
+      margin: 20px auto 60px;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 28px;
+      padding: 44px 36px;
+      box-shadow: 0 20px 40px -15px rgba(15, 23, 42, 0.07);
       display: flex;
       flex-direction: column;
       align-items: center;
+      text-align: center;
+      transition: all 0.25s ease;
     }
-    .logo-wrapper {
+    .game-section:hover {
+      box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.12);
+      border-color: #cbd5e1;
+    }
+    .logo-container {
       margin-bottom: 24px;
+      max-width: 320px;
+      width: 100%;
     }
-    .logo-img {
-      width: 120px;
-      height: 120px;
-      border-radius: 28px;
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
-      object-fit: cover;
-      display: block;
-      transition: transform 0.2s ease;
+    .game-logo {
+      width: 100%;
+      height: auto;
+      max-height: 130px;
+      object-fit: contain;
+      filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.08));
     }
-    .logo-img:hover {
-      transform: scale(1.04);
+    .game-details {
+      max-width: 580px;
     }
-    h1 {
-      font-size: 32px;
+    .game-details h2 {
+      font-size: 26px;
       font-weight: 800;
       color: #0f172a;
+      margin-bottom: 12px;
       letter-spacing: -0.5px;
-      margin-bottom: 8px;
     }
-    p.tagline {
+    .game-details p {
       font-size: 15px;
       color: #64748b;
-      margin-bottom: 32px;
-      font-weight: 500;
+      margin-bottom: 28px;
+      line-height: 1.7;
     }
-    .play-btn {
+    .btn-play {
       display: inline-flex;
       align-items: center;
-      justify-content: center;
-      gap: 10px;
-      background-color: #000000;
+      gap: 12px;
+      background: #0f172a;
       color: #ffffff;
-      padding: 14px 28px;
-      border-radius: 14px;
-      text-decoration: none;
-      font-weight: 700;
+      padding: 16px 36px;
+      border-radius: 16px;
       font-size: 15px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      font-weight: 800;
+      text-decoration: none;
+      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.2);
       transition: all 0.2s ease;
-      width: 100%;
-      max-width: 260px;
     }
-    .play-btn:hover {
-      background-color: #1e293b;
+    .btn-play:hover {
+      background: #1e293b;
       transform: translateY(-2px);
-      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 14px 30px rgba(15, 23, 42, 0.28);
     }
-    .play-btn svg {
-      width: 20px;
-      height: 20px;
+    .btn-play svg {
+      width: 22px;
+      height: 22px;
       fill: currentColor;
     }
+
+    /* Studio Philosophy */
+    .philosophy {
+      max-width: 860px;
+      margin: 0 auto 70px;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+    .phil-card {
+      background: #ffffff;
+      border: 1px solid #f1f5f9;
+      border-radius: 20px;
+      padding: 28px 24px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+    }
+    .phil-icon {
+      font-size: 28px;
+      margin-bottom: 14px;
+    }
+    .phil-title {
+      font-size: 17px;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 8px;
+    }
+    .phil-desc {
+      font-size: 14px;
+      color: #64748b;
+      line-height: 1.6;
+    }
+
     footer {
-      margin-top: 64px;
+      margin-top: auto;
+      border-top: 1px solid #e2e8f0;
+      background: #ffffff;
+      padding: 28px 24px;
+      text-align: center;
       font-size: 13px;
       color: #94a3b8;
+    }
+    footer a {
+      color: #0284c7;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    @media (max-width: 640px) {
+      h1 {
+        font-size: 34px;
+      }
+      .game-section {
+        padding: 32px 20px;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <div class="logo-wrapper">
-      <img src="logo.png" alt="Rush Hour 3D" class="logo-img" />
-    </div>
-
-    <h1>Rush Hour 3D</h1>
-    <p class="tagline">Official game by Bijay Chalise</p>
-
-    <a href="https://play.google.com/store/apps/details?id=rush.e" target="_blank" rel="noopener noreferrer" class="play-btn">
-      <svg viewBox="0 0 24 24">
-        <path d="M3.609 1.814L13.792 12 3.61 22.186a2.023 2.023 0 0 1-.61-1.464V3.278c0-.585.228-1.127.609-1.464zm11.235 11.238l2.585 2.585-11.839 6.837 9.254-9.422zm0-2.104L5.59 1.526l11.839 6.837-2.585 2.585zm1.488 1.488l3.666 2.117c.928.536.928 1.408 0 1.944l-3.666 2.117-2.072-2.072 2.072-2.106z"/>
-      </svg>
-      <span>Get on Google Play</span>
+  <header>
+    <a href="/" class="brand">
+      <span>Jay Games</span>
+      <span class="brand-badge">STUDIO</span>
     </a>
+  </header>
 
-    <footer>
-      <p>&copy; 2026 Bijay Chalise</p>
-    </footer>
-  </div>
+  <main>
+    <section class="hero">
+      <div class="moto-pill">✨ OUR MISSION & PASSION</div>
+      <h1>Crafting High-Quality Games <span>That Players Love</span></h1>
+      <p>At Jay Games, we believe games should be instant fun, beautifully designed, and built with pure passion. No unnecessary complications — just authentic, addictive gameplay for everyone.</p>
+    </section>
+
+    <!-- Featured Game with Real 3D Logo Asset -->
+    <section class="game-section">
+      <div class="logo-container">
+        <img src="rush_hour_logo.png" alt="Rush Hour 3D Official Logo" class="game-logo" />
+      </div>
+      <div class="game-details">
+        <h2>Rush Hour 3D: Traffic Jam</h2>
+        <p>Unjam gridlocked city intersections across 100 handcrafted districts. Maneuver taxis, police cruisers, and iconic supercars to pave the way to highway freedom in stunning 3D isometric physics.</p>
+        <a href="https://play.google.com/store/apps/details?id=rush.e" target="_blank" rel="noopener noreferrer" class="btn-play">
+          <svg viewBox="0 0 24 24">
+            <path d="M3.609 1.814L13.792 12 3.61 22.186a2.023 2.023 0 0 1-.61-1.464V3.278c0-.585.228-1.127.609-1.464zm11.235 11.238l2.585 2.585-11.839 6.837 9.254-9.422zm0-2.104L5.59 1.526l11.839 6.837-2.585 2.585zm1.488 1.488l3.666 2.117c.928.536.928 1.408 0 1.944l-3.666 2.117-2.072-2.072 2.072-2.106z"/>
+          </svg>
+          <span>GET ON GOOGLE PLAY</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Studio Pillars / Motto -->
+    <section class="philosophy">
+      <div class="phil-card">
+        <div class="phil-icon">🎮</div>
+        <div class="phil-title">Gameplay First</div>
+        <div class="phil-desc">Every mechanic is tuned for buttery-smooth responsiveness and tactile satisfaction on touchscreens.</div>
+      </div>
+      <div class="phil-card">
+        <div class="phil-icon">💎</div>
+        <div class="phil-title">Pure 3D Quality</div>
+        <div class="phil-desc">Handcrafted 3D car models, authentic textures, and real physical simulation without fake overlays.</div>
+      </div>
+      <div class="phil-card">
+        <div class="phil-icon">⚡</div>
+        <div class="phil-title">Zero Friction</div>
+        <div class="phil-desc">Instant loading with no lag, lightweight downloads, and optimized performance for all modern devices.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Jay Games &bull; Bijay Chalise. All rights reserved.</p>
+  </footer>
 </body>
 </html>
